@@ -3,12 +3,12 @@ name: Deploy to Staging
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
     # Do not deploy in the main repository, only in user projects
-    if: github.repository_owner != 'fastapi'
+    if: github.repository_owner != 'goabonga'
     runs-on:
       - self-hosted
       - staging

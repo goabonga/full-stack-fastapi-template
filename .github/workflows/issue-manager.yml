@@ -19,7 +19,7 @@ permissions:
 
 jobs:
   issue-manager:
-    if: github.repository_owner == 'fastapi'
+    if: github.repository_owner == 'goabonga'
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub context
